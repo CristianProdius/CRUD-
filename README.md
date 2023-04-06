@@ -18,10 +18,11 @@ The project is a CRUD API built using GraphQL and the Python frameworks Starlett
 REST API:
 
 To get all posts for a user with an ID of 123:
-
+<code>
 bash
 Copy code
 GET /users/123/posts
+</code>
 To get all comments for a post with an ID of 456:
 
 bash
