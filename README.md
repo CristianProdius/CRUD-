@@ -13,6 +13,49 @@ The project is a CRUD API built using GraphQL and the Python frameworks Starlett
       <li>Advandages over REST</li>
       GraphQL give us only the information requiered while REST provides all the information
       <li>REST quieres/GraphQL quieres</li>
+      Suppose we have an API that provides information about users and their posts. Here's how we might query the API using REST and GraphQL:
+
+REST API:
+
+To get all posts for a user with an ID of 123:
+
+bash
+Copy code
+GET /users/123/posts
+To get all comments for a post with an ID of 456:
+
+bash
+Copy code
+GET /posts/456/comments
+GraphQL API:
+
+To get all posts for a user with an ID of 123:
+
+scss
+Copy code
+query {
+  user(id: 123) {
+    posts {
+      id
+      title
+      content
+    }
+  }
+}
+To get all comments for a post with an ID of 456:
+
+scss
+Copy code
+query {
+  post(id: 456) {
+    comments {
+      id
+      author
+      text
+    }
+  }
+}
+As you can see, with GraphQL, we can get all the information we need in a single request, and we can specify exactly what information we want to get back. With REST, we might need to make multiple requests to get all the information we need, and we might get more information than we actually need.
     </ol> 
   </li>
 </ol>
