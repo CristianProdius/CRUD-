@@ -18,7 +18,6 @@ The project is a CRUD API built using GraphQL and the Python frameworks Starlett
 On the other hand, over-fetching can occur when the API provides more data than the client actually needs. This can happen when the API returns all the available data for a particular resource, even if the client only needs a subset of that data. This can also lead to inefficient use of network resources and slow down the application.
 
 GraphQL solves these problems by allowing the client to specify exactly what data it needs in a single request, and no more. The client can define a GraphQL query that specifies exactly what data it needs, and the GraphQL server will only return that data. This means that there is no under-fetching or over-fetching of data, and the client gets exactly what it needs in a single request, making the application more efficient and responsive.
-
     </ol> 
   </li>
 </ol>
