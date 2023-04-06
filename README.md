@@ -7,5 +7,12 @@ The project is a CRUD API built using GraphQL and the Python frameworks Starlett
 <ol>
   <li>
     <h3>Learn Basic of GraphQl</h3>
+    <ol>
+      <li>what is GraphQL</li>
+      GraphQl is an API but insded giving all the information from a server it provides you with only the info that you want. For instance when you ask a librian for a book he gaves you only that book instead of providing all books from library.
+      <li>Advandages over REST</li>
+      GraphQL give us only the information requiered while REST provides all the information
+      <li>REST quieres/GraphQL quieres</li>
+    </ol> 
   </li>
 </ol>
