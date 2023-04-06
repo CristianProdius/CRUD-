@@ -12,51 +12,13 @@ The project is a CRUD API built using GraphQL and the Python frameworks Starlett
       GraphQl is an API but insded giving all the information from a server it provides you with only the info that you want. For instance when you ask a librian for a book he gaves you only that book instead of providing all books from library.
       <li>Advandages over REST</li>
       GraphQL give us only the information requiered while REST provides all the information
-      <li>REST quieres/GraphQL quieres</li>
-      Suppose we have an API that provides information about users and their posts. Here's how we might query the API using REST and GraphQL:
+      <li>Under Fetching and over fetching</li>
+      When using REST APIs, one of the issues that can arise is under-fetching. This happens when a client needs to retrieve some data from the API, but the API doesn't provide all the data that the client needs in a single request. As a result, the client has to make multiple requests to the API to get all the data it needs, which can be inefficient and slow down the application.
 
-REST API:
+On the other hand, over-fetching can occur when the API provides more data than the client actually needs. This can happen when the API returns all the available data for a particular resource, even if the client only needs a subset of that data. This can also lead to inefficient use of network resources and slow down the application.
 
-To get all posts for a user with an ID of 123:
-<code>
-bash
-Copy code
-GET /users/123/posts
-</code>
-To get all comments for a post with an ID of 456:
+GraphQL solves these problems by allowing the client to specify exactly what data it needs in a single request, and no more. The client can define a GraphQL query that specifies exactly what data it needs, and the GraphQL server will only return that data. This means that there is no under-fetching or over-fetching of data, and the client gets exactly what it needs in a single request, making the application more efficient and responsive.
 
-bash
-Copy code
-GET /posts/456/comments
-GraphQL API:
-
-To get all posts for a user with an ID of 123:
-
-scss
-Copy code
-query {
-  user(id: 123) {
-    posts {
-      id
-      title
-      content
-    }
-  }
-}
-To get all comments for a post with an ID of 456:
-
-scss
-Copy code
-query {
-  post(id: 456) {
-    comments {
-      id
-      author
-      text
-    }
-  }
-}
-As you can see, with GraphQL, we can get all the information we need in a single request, and we can specify exactly what information we want to get back. With REST, we might need to make multiple requests to get all the information we need, and we might get more information than we actually need.
     </ol> 
   </li>
 </ol>
